@@ -7,6 +7,8 @@
   <title>{{ env('APP_NAME') }} </title>
 </head>
 <body>
-  
+  @foreach ( $trains as $train)
+      h1{{ $train->azienda}}
+  @endforeach
 </body>
 </html>

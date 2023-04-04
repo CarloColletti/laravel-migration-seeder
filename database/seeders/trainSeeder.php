@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 
 
 use App\Models\train;
+
 class trainSeeder extends Seeder
 {
     /**
@@ -14,6 +15,8 @@ class trainSeeder extends Seeder
      *
      * @return void
      */
+
+    // generare manualmente il dato da inserire nel database
     public function run()
     {
         $new_train = new train;
@@ -28,4 +31,9 @@ class trainSeeder extends Seeder
 
         $new_train->save();
     }
+
+    // public function run()
+    // {
+       
+    // }
 }
